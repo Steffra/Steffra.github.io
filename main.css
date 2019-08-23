@@ -48,9 +48,8 @@ ul {
  }
 
 ul li {
-  display:block;
-  padding-top:15px;
-  width:100%;
+  padding-bottom:20px;
+  align-self: flex-start;
 }
 
 

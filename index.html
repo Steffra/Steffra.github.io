@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,14 +9,13 @@
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <title>Krausz Bertold!</title>
 </head>
-
 <body>
   <div class="sidenav">
     <div class="middle">
       <ul>
-        <li class="nav icon fa fa-home fa-2x active"  onclick="location.href = 'index';" id="one"></li>
-        <div class="nav hovertext"  onclick="location.href = 'index';" id=one_text>HOME</div>
-        <li class="nav icon fa fa-user fa-2x"  onclick="location.href = 'about';" id="two"></li>
+        <li class="nav icon fa fa-home fa-2x active" onclick="location.href = 'index';" id="one"></li>
+        <div class="nav hovertext" onclick="location.href = 'index';" id=one_text>HOME</div>
+        <li class="nav icon fa fa-user fa-2x" onclick="location.href = 'about';" id="two"></li>
         <div class="nav hovertext" onclick="location.href = 'about';" id=two_text>ABOUT</div>
         <li class="nav icon fa fa-gear fa-2x" id="three"></li>
         <div class="nav hovertext" id=three_text>SKILLS</div>
@@ -28,26 +26,23 @@
       </ul>
       <div class="accent"></div>
     </div>
-    
   </div>
   <div class="main">
     <div class="leftcontent">
-        <h1 class="textInMiddle">Hi,</h1>
-        <h1 class="textInMiddle">I'm <span class="hi">Bertold</span>,</h1>
-        <h1 class="textInMiddle"> web developer</h1>
-        <h2>Back End Developer / PHP / JavaScript</h2>
-        <a rel="contact" href="https://jacekjeznach.com/contact/" class="flat-button animated rubberBand"> CONTACT ME </a>
+      <h1 class="textInMiddle">Hi,</h1>
+      <h1 class="textInMiddle">I'm <span class="hi">Bertold</span>,</h1>
+      <h1 class="textInMiddle"> web developer</h1>
+      <h2>Back End Developer / PHP / JavaScript</h2>
+      <a rel="contact" href="contact" class="flat-button animated rubberBand"> CONTACT ME </a>
 
-      </div>
-    <div  class="" id="myCanvasContainer">
+    </div>
+    <div class="" id="myCanvasContainer">
       <canvas width="500" height="500" id="myCanvas">
         <p>Anything in here will be replaced on browsers that support the canvas element</p>
       </canvas>
     </div>
   </div>
- 
-
-  <div id="tags">
+  <div hidden="hidden" id="tags">
     <ul>
       <li> <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML 5</a></li>
       <li><a data-weight="25" href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">CSS</a></li>
@@ -83,27 +78,25 @@
 <script type="text/javascript">
   $(document).ready(function () {
     if (!$('#myCanvas').tagcanvas({
-      textColour:'#08fdd8',
-      outlineThickness:0.5,
-      outlineColour:'#fe0853',
-      maxSpeed:0.06,
-      freezeActive:true,
-      shuffleTags:true,
-      shape:'sphere',
-      zoom:0.9,
-      noSelect:true,
-      textFont:null
-      ,pinchZoom:true
-      ,freezeDecel:true
-      ,fadeIn:3000,
-      initial:[0.3,-0.1],
-      depth:0.8
+      textColour: '#08fdd8',
+      outlineThickness: 0.5,
+      outlineColour: '#fe0853',
+      maxSpeed: 0.06,
+      freezeActive: true,
+      shuffleTags: true,
+      shape: 'sphere',
+      zoom: 0.9,
+      noSelect: true,
+      textFont: null
+      , pinchZoom: true
+      , freezeDecel: true
+      , fadeIn: 3000,
+      initial: [0.3, -0.1],
+      depth: 0.8
     }, 'tags')) {
       // something went wrong, hide the canvas container
       $('#myCanvasContainer').hide();
     }
   });
-
 </script>
-
 </html>

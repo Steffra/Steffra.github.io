@@ -14,12 +14,18 @@
 <body>
   <div class="sidenav">
     <div class="middle">
+      <a rel="index" href="https://jacekjeznach.com/" class="home-link active"><i class="icon-hom"></i></a>
       <ul>
         <li class="icon fa fa-home fa-2x" id="one"></li>
+        <div class="hovertext" id=one_text>HOME</div>
         <li class="icon fa fa-user fa-2x" id="two"></li>
+        <div class="hovertext" id=two_text>ABOUT</div>
         <li class="icon fa fa-gear fa-2x" id="three"></li>
-        <li class="icon fa fa-eye fa-2x" id="three"></li>
-        <li class="icon fa fa-envelope fa-2x" id="four"></li>
+        <div class="hovertext" id=three_text>SKILLS</div>
+        <li class="icon fa fa-eye fa-2x" id="four"></li>
+        <div class="hovertext" id=four_text>MY WORK</div>
+        <li class="icon fa fa-envelope fa-2x" id="five"></li>
+        <div class="hovertext" id=five_text>CONTACT</div>
       </ul>
     </div>
   </div>
@@ -82,17 +88,32 @@
       ,fadeIn:3000,
       initial:[0.3,-0.1],
       depth:0.8
-     /* }
-      
-      textColour: '#08fdd8',
-      outlineColour: '#ff00ff',
-      reverse: true,
-      depth: 0.8,
-      maxSpeed: 0.05
-      */
     }, 'tags')) {
       // something went wrong, hide the canvas container
       $('#myCanvasContainer').hide();
+    }
+  });
+
+  $('.hovertext, .icon').hover(function(){
+    myarray=["one", "two", "three", "four", "five", ]
+    if(jQuery.inArray($(this).prop('id'), myarray) !== -1){
+     // console.log($(this).prop('id'));
+      $(this).css("opacity","0");
+      $(this).next().css("opacity","1")
+    }else{
+      $(this).css("opacity","1");
+      $(this).prev().css("opacity","0")
+    }
+  });
+
+  $('.hovertext, .icon').mouseout(function(){
+    myarray=["one", "two", "three", "four", "five", ]
+    if(jQuery.inArray($(this).prop('id'), myarray) !== -1){
+      $(this).css("opacity","1");
+      $(this).next().css("opacity","0");
+    }else{
+      $(this).css("opacity","0");
+      $(this).prev().css("opacity","1");
     }
   });
 </script>

@@ -15,17 +15,6 @@ body {
 }
 
 .sidenav {
-  /*overflow: auto;
-  font-family: verdana;
-  font-size: 12px;
-  font-weight: 200;
-  background-color: #000;
-  position: fixed;
-  top: 0px;
-  width: 110px;
-  height: 100%;
-  color: #08fdd8;
-*/
   background: #181818;
   width: 60px;
   height: 100%;
@@ -34,8 +23,6 @@ body {
   z-index: 3;
   min-height: 500px;
 }
-
-
 
 a {
   text-decoration: none;
@@ -51,13 +38,13 @@ ul {
   flex-direction:column;
  }
 
-ul li {
+ul li{
   max-width: 50%;
 }
 
 
 ul .icon:hover {
-  opacity: 0.3;
+ /* opacity: 0.3;*/
 }
 .icon {
   font-size: 22px;
@@ -69,16 +56,6 @@ ul .icon:hover {
   text-decoration: none;
 }
 
-#myCanvasContainer{
- /* right: 10%;
-  height:100%;
-  position: fixed; 
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction:column;*/
-}
 #myCanvas{
   position: absolute;
   top: 0;
@@ -88,5 +65,25 @@ ul .icon:hover {
   margin: auto;
   width: auto;
   height: 100%;
+}
+#one_text, #two_text, #three_text, #four_text, #five_text{
+ /* position:absolute;*/
+}
+.hovertext{
+  position:relative;
+  top:-45px;
+  left:2px;
+  opacity:0;
+  color:#08fdd8;
+  font-weight: bold;
+  font-size:12px;
+  font-family: Sans-Serif;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
 }
 

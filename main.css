@@ -1,17 +1,41 @@
 * {
   transition: all 500ms ease-out;
   -webkit-transition: all 500ms ease-out;
-}
-* {
   margin: 0;
   padding: 0;
 }
-
+* 
 body {
     background-color: #222;
     margin: 0px;
     padding: 0px;
     height:100%;
+}
+.main{
+  position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.leftcontent{
+  position: absolute;
+  left: 15em;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30%;
+  max-height: 90%;
+  vertical-align: middle;
+}
+.accent{
+  position: fixed;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  left: 60px;
+  width: 4px;
+  height: 100%;
+  background-color: #08fdd8;
 }
 
 .sidenav {
@@ -22,11 +46,6 @@ body {
   top: 0;
   z-index: 3;
   min-height: 500px;
-}
-
-a {
-  text-decoration: none;
-  font-family: open sans, sans-serif;
 }
 
 ul {
@@ -42,13 +61,9 @@ ul li{
   max-width: 50%;
 }
 
-
-ul .icon:hover {
- /* opacity: 0.3;*/
-}
 .icon {
   font-size: 22px;
-  color: #08fdd8;
+  color: rgb(78, 78, 78);
   display: block;
   line-height: 51px;
   height: 51px;
@@ -59,16 +74,13 @@ ul .icon:hover {
 #myCanvas{
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
-  bottom: 0;
+
   margin: auto;
   width: auto;
   height: 100%;
 }
-#one_text, #two_text, #three_text, #four_text, #five_text{
- /* position:absolute;*/
-}
+
 .hovertext{
   position:relative;
   top:-45px;
@@ -78,7 +90,6 @@ ul .icon:hover {
   font-weight: bold;
   font-size:12px;
   font-family: Sans-Serif;
-  speak: none;
   font-style: normal;
   font-weight: 400;
   font-variant: normal;
@@ -86,4 +97,52 @@ ul .icon:hover {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
 }
+h1{
+  color: #fff;
+    font-size: 65px;
+    line-height: 53px;
+    margin: 0;
+    font-family: Sans-Serif;
+    font-weight: 600;
+}
+.active{
+  color:#08fdd8
+}
+.hi{
+  font: weight 800;
+  color:#08fdd8;
+}
 
+.flat-button{
+
+  color: #08fdd8;
+  font-size: 11px;
+  letter-spacing: 4px;
+  font-family: "Open Sans",sans-serif;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 1px solid #08fdd8;
+  margin-top: 25px;
+  float: left;
+  border-radius: 3px;
+  animation: myanim2 1s 1.8s backwards;
+}
+.flat-button:hover{
+  background-color: #08fdd8;
+  color:#222;
+  text-decoration: none;
+}
+
+.nav:hover{
+  cursor: pointer; 
+}
+h2{
+  color: #8d8d8d;
+  margin-top: 19px;
+  font-weight: 400;
+  font-size: 11px;
+  font-family: "Open Sans",sans-serif;
+  letter-spacing: 3px;
+  -webkit-animation: myanim2 1s 1.8s backwards;
+  animation: myanim2 1s 1.8s backwards;
+}

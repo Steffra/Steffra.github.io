@@ -26,6 +26,19 @@ body {
   vertical-align: middle;
   color:#fff;
 }
+.rightcontent{
+  position: absolute;
+  right: 20em;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25%;
+  max-height: 90%;
+  vertical-align: middle;
+  color:#fff;
+}
+.rightHeader{
+ font-size: 55px;
+}
 .accent{
   position: fixed;
   height: 100%;
@@ -110,12 +123,30 @@ h1{
   color:#08fdd8
 }
 .hi{
-  font: weight 800;
+  font-weight:800;
   color:#08fdd8;
 }
 
 .flat-button{
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: 4px;
+  font-family: "Open Sans",sans-serif;
+  text-decoration: none;
+  padding: 18px 30px;
+  border: 1px solid #08fdd8;
+  margin-top: 25px;
+  float: left;
+  border-radius: 3px;
+  animation: myanim2 1s 1.8s backwards;
+}
+.flat-button:hover{
+  background-color: #08fdd8 !important; 
+  color:#222 !important;
+  text-decoration: none!important;
+}
 
+#contactButton{
   color: #08fdd8;
   font-size: 11px;
   letter-spacing: 4px;
@@ -128,12 +159,6 @@ h1{
   border-radius: 3px;
   animation: myanim2 1s 1.8s backwards;
 }
-.flat-button:hover{
-  background-color: #08fdd8;
-  color:#222;
-  text-decoration: none;
-}
-
 .nav:hover{
   cursor: pointer; 
 }

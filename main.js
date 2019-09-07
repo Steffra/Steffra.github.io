@@ -19,3 +19,9 @@
       $(this).prev().css("opacity","1");
     }
   });
+  $('.flat-button').hover(function(){
+    $(this).children().css("color","#222");
+  });
+  $('.flat-button').mouseout(function(){
+    $(this).children().css("color","#08fdd8");
+  });

@@ -123,7 +123,6 @@ h1{
   color:#08fdd8
 }
 .hi{
-  font-weight:800;
   color:#08fdd8;
 }
 
@@ -151,7 +150,6 @@ h1{
 }
 .flat-button:first-child:hover{
   color:#222 !important;
-
 }
 
 #contactButton{
@@ -179,4 +177,15 @@ h2{
   letter-spacing: 3px;
   -webkit-animation: myanim2 1s 1.8s backwards;
   animation: myanim2 1s 1.8s backwards;
+}
+
+.placeholder{
+  height:24px;
+}
+p {
+  margin-top: 14px;
+}
+.link{
+  text-decoration: underline;
+  cursor: pointer; 
 }

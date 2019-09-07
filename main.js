@@ -22,7 +22,7 @@
   $('.flat-button').hover(function(){
     $(this).children().css("color","#222");
   });
-  $('.flat-button').mouseout(function(){
+  $('.flat-button').mouseleave(function(){
     $(this).children().css("color","#08fdd8");
   });
   $('.flat-button span').hover(function(){

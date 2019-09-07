@@ -25,3 +25,6 @@
   $('.flat-button').mouseout(function(){
     $(this).children().css("color","#08fdd8");
   });
+  $('.flat-button span').hover(function(){
+    $(this).css("color","#222");
+  });

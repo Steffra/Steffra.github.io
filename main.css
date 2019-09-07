@@ -139,6 +139,8 @@ h1{
   float: left;
   border-radius: 3px;
   animation: myanim2 1s 1.8s backwards;
+  transition: all 0ms ease-out; 
+  -webkit-transition: all 0ms ease-out;
 }
 .flat-button:hover{
   background-color: #08fdd8 !important; 
@@ -146,6 +148,10 @@ h1{
   text-decoration: none!important;
   transition: 0ms ease-out;
   -webkit-transition:0ms ease-out;
+}
+.flat-button:first-child:hover{
+  color:#222 !important;
+
 }
 
 #contactButton{

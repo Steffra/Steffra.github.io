@@ -1,0 +1,14 @@
+# check to make sure the request isn't actually for an html file
+RewriteCond %{THE_REQUEST} !^([A-Z]{3,9})\ /(.+)\.html\ HTTP
+# check to make sure the request is for a directory that exists
+RewriteCond %{REQUEST_FILENAME} -d
+# rewrite the directory to 
+RewriteRule ^(.+)/$ /$1.html [R]
+# check to make sure the request IS for an html file
+RewriteCond %{THE_REQUEST} ^([A-Z]{3,9})\ /(.+)\.html\ HTTP
+# See if the directory exists if you strip off the .html
+RewriteCond %{DOCUMENT_ROOT}/%2 -d
+# Check for an internal rewrite token that we add
+RewriteCond %{QUERY_STRING} !r=n
+# if no token, rewrite and add token (so that directories with index.html won't get looped)
+RewriteRule ^(.+)\.html /$1/?r=n [L,QSA]

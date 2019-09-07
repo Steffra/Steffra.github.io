@@ -144,6 +144,8 @@ h1{
   background-color: #08fdd8 !important; 
   color:#222 !important;
   text-decoration: none!important;
+  transition: 0ms ease-out;
+  -webkit-transition:0ms ease-out;
 }
 
 #contactButton{

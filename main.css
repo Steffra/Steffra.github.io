@@ -62,7 +62,7 @@ body {
   min-height: 500px;
 }
 
-.middle {
+ .middle ul {
   position: fixed; 
   height: 100%;
   display: flex;
@@ -70,6 +70,10 @@ body {
   justify-content: center;
   flex-direction:column;
  }
+
+.middle ul li{
+  max-width: 50%;
+}
  .social {
   position: fixed; 
   bottom:0px;

@@ -12,8 +12,8 @@ body {
     height:100%;
 }
 .main{
-  left: 65px;
-  position: absolute;
+  padding-left: 65px;
+    position: absolute;
     height: 100%;
     width: 100%;
 }

@@ -24,6 +24,7 @@
   });
   $('.flat-button').mouseleave(function(){
     $(this).children().css("color","#08fdd8");
+    $(this).children('h2').css("color","#8d8d8d");
   });
   $('.flat-button span').hover(function(){
     $(this).css("color","#222");

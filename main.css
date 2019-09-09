@@ -62,7 +62,7 @@ body {
   min-height: 500px;
 }
 
-ul {
+.middle {
   position: fixed; 
   height: 100%;
   display: flex;
@@ -70,8 +70,16 @@ ul {
   justify-content: center;
   flex-direction:column;
  }
+ .social {
+  position: fixed; 
+  bottom:0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+ }
 
-ul li{
+ul{
   max-width: 50%;
 }
 
@@ -81,6 +89,17 @@ ul li{
   display: block;
   line-height: 51px;
   height: 51px;
+  position: relative;
+  text-decoration: none;
+}
+
+.socialIcon {
+  font-size: 22px;
+  color: #08fdd8;
+  display: block;
+  line-height: 51px;
+  padding: 10px;
+  padding-left:20px;
   position: relative;
   text-decoration: none;
 }
@@ -188,4 +207,17 @@ p {
 .link{
   text-decoration: underline;
   cursor: pointer; 
+}
+
+.social ul{
+  position: fixed;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  left: 60px;
+  width: 4px;
+  height: 100%;
+  background-color: #08fdd8;
 }

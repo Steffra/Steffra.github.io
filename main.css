@@ -12,13 +12,19 @@ body {
     height:100%;
 }
 .main{
+  left: 65px;
   position: absolute;
     height: 100%;
     width: 100%;
 }
 .leftcontent{
-  position: absolute;
-  left: 15em;
+  position: fixed;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  left: 12em;
   top: 50%;
   transform: translateY(-50%);
   width: 30%;
@@ -147,6 +153,7 @@ h1{
 }
 .hi{
   color:#08fdd8;
+  font-weight:800;
 }
 
 .flat-button{
@@ -200,6 +207,9 @@ h2{
   letter-spacing: 3px;
   -webkit-animation: myanim2 1s 1.8s backwards;
   animation: myanim2 1s 1.8s backwards;
+}
+a h2{
+  text-align: center;
 }
 
 .placeholder{

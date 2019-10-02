@@ -3,8 +3,10 @@
   -webkit-transition: all 500ms ease-out;
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
+
 }
-* 
+
 body {
     background-color: #222;
     margin: 0px;
@@ -34,13 +36,21 @@ body {
 }
 .rightcontent{
   position: absolute;
-  right: 20em;
+  right: 10em;
   top: 50%;
   transform: translateY(-50%);
-  width: 25%;
+  width: 35%;
   max-height: 90%;
   vertical-align: middle;
   color:#fff;
+
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: column;
+}
+.rightcontent .flat-button{
+  width: 60%;
 }
 .rightHeader{
  font-size: 55px;
@@ -155,8 +165,12 @@ h1{
   color:#08fdd8;
   font-weight:800;
 }
-
+.hi2{
+  color:#08fdd8;
+}
 .flat-button{
+  width:100%;
+  text-align:center;
   color: #fff;
   font-size: 11px;
   letter-spacing: 4px;
@@ -165,6 +179,24 @@ h1{
   padding: 18px 30px;
   border: 1px solid #08fdd8;
   margin-top: 25px;
+  float: left;
+  border-radius: 3px;
+  animation: myanim2 1s 1.8s backwards;
+  transition: all 0ms ease-out; 
+  -webkit-transition: all 0ms ease-out;
+}
+
+.verticalButtons .flat-button{
+  width: inherit;
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: 4px;
+  font-family: "Open Sans",sans-serif;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 1px solid #08fdd8;
+  margin-top: 25px;
+  margin-right: 15px;
   float: left;
   border-radius: 3px;
   animation: myanim2 1s 1.8s backwards;
@@ -182,7 +214,18 @@ h1{
   color:#222 !important;
 }
 
+.flat-button.fakeButton:hover{
+  background-color: #222 !important; 
+  color:#08fdd8 !important;
+  text-decoration: none!important;
+}
+
+.flat-button.fakeButton:first-child:hover{
+  color:#08fdd8 !important;
+}
+
 #contactButton{
+  width: inherit;
   color: #08fdd8;
   font-size: 11px;
   letter-spacing: 4px;
@@ -218,6 +261,9 @@ a h2{
 p {
   margin-top: 14px;
 }
+h6 + p{
+  margin-left: 3em;
+}
 .link{
   text-decoration: underline;
   cursor: pointer; 
@@ -234,4 +280,21 @@ p {
   width: 4px;
   height: 100%;
   background-color: #08fdd8;
+}
+#resume{
+  position: absolute;
+  right: 1em;
+  top: -10%;
+  width: 45%;
+  height:110%;
+  min-height: 101%;
+  vertical-align: middle;
+  color: #fff;
+  overflow:hidden;
+}
+
+.verticalButtons .flat-button.fakeButton {
+  border:none;
+  margin-top: 30px;
+
 }

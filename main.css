@@ -298,3 +298,32 @@ h6 + p{
   margin-top: 30px;
 
 }
+
+.work{
+  width:175%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  vertical-align: middle;
+}
+.work img{
+  border: 2px solid #08fdd8;
+  margin:30px;
+  opacity: 0.7; 
+}
+.work img:hover{
+  opacity: 1; 
+  border: 5px solid #08fdd8;
+  cursor: pointer; 
+
+}
+.work h3{
+  color:#08fdd8;
+}
+.desc{
+  margin:25px;
+}
+.desc h2{
+  margin-top: 0px;
+}

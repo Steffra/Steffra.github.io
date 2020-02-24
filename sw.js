@@ -47,7 +47,7 @@ self.addEventListener('install', event => {
             ,'/fontawesome/fonts/fontawesome-webfont.ttf'
             ,'/fontawesome/fonts/fontawesome-webfont.woff'
             ,'/fontawesome/fonts/fontawesome-webfont.woff2'
-            ,'/fontawesome/fonts/fontawesome.otf'
+            ,'/fontawesome/fonts/FontAwesome.otf'
         ]))
     );
 })

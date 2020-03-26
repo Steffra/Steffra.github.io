@@ -4,152 +4,28 @@
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
-
 }
 
 body {
     background-color: #222;
-    margin: 0px;
-    padding: 0px;
-    height:100%;
+    color: #fff;
+}
+.row{
+  max-width: 100%;
 }
 .main{
-  padding-left: 65px;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-.leftcontent{
-  position: fixed;
-  height: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  left: 12em;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 30%;
-  max-height: 90%;
-  vertical-align: middle;
-  color:#fff;
-}
-.rightcontent{
-  position: absolute;
-  right: 10em;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 35%;
-  max-height: 90%;
-  vertical-align: middle;
-  color:#fff;
-
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  flex-direction: column;
-}
-.rightcontent .flat-button{
-  width: 60%;
-}
-.rightHeader{
- font-size: 55px;
-}
-.accent{
-  position: fixed;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  left: 60px;
-  width: 4px;
-  height: 100%;
-  background-color: #08fdd8;
-}
-
-.sidenav {
-  background: #181818;
-  width: 60px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  z-index: 3;
-  min-height: 500px;
-}
-
- .middle ul {
-  position: fixed; 
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction:column;
- }
-
-.middle ul li{
-  max-width: 50%;
-}
- .social {
-  position: fixed; 
-  bottom:0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction:column;
- }
-
-ul{
-  max-width: 50%;
-}
-
-.icon {
-  font-size: 22px;
-  color: rgb(78, 78, 78);
-  display: block;
-  line-height: 51px;
-  height: 51px;
   position: relative;
-  text-decoration: none;
+  margin-left:80px;
+  margin-top: 10%; 
+  padding-right:0%;
 }
 
-.socialIcon {
-  font-size: 22px;
-  color: #08fdd8;
-  display: block;
-  line-height: 51px;
-  padding: 10px;
-  padding-left:20px;
-  position: relative;
-  text-decoration: none;
+.main .row div{
+  padding-left:10%;
+  min-width:560px;
+  padding-right: 0px
 }
 
-#myCanvas{
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  margin: auto;
-  width: auto;
-  height: 100%;
-}
-
-.hovertext{
-  position:relative;
-  top:-45px;
-  left:2px;
-  opacity:0;
-  color:#08fdd8;
-  font-weight: bold;
-  font-size:12px;
-  font-family: Sans-Serif;
-  font-style: normal;
-  font-weight: 400;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-}
 h1{
   color: #fff;
     font-size: 65px;
@@ -157,89 +33,6 @@ h1{
     margin: 0;
     font-family: Sans-Serif;
     font-weight: 600;
-}
-.active{
-  color:#08fdd8
-}
-.hi{
-  color:#08fdd8;
-  font-weight:800;
-}
-.hi2{
-  color:#08fdd8;
-}
-.flat-button{
-  width:100%;
-  text-align:center;
-  color: #fff;
-  font-size: 11px;
-  letter-spacing: 4px;
-  font-family: "Open Sans",sans-serif;
-  text-decoration: none;
-  padding: 18px 30px;
-  border: 1px solid #08fdd8;
-  margin-top: 25px;
-  float: left;
-  border-radius: 3px;
-  animation: myanim2 1s 1.8s backwards;
-  transition: all 0ms ease-out; 
-  -webkit-transition: all 0ms ease-out;
-}
-
-.verticalButtons .flat-button{
-  width: inherit;
-  color: #fff;
-  font-size: 11px;
-  letter-spacing: 4px;
-  font-family: "Open Sans",sans-serif;
-  text-decoration: none;
-  padding: 10px 15px;
-  border: 1px solid #08fdd8;
-  margin-top: 25px;
-  margin-right: 15px;
-  float: left;
-  border-radius: 3px;
-  animation: myanim2 1s 1.8s backwards;
-  transition: all 0ms ease-out; 
-  -webkit-transition: all 0ms ease-out;
-}
-.flat-button:hover{
-  background-color: #08fdd8 !important; 
-  color:#222 !important;
-  text-decoration: none!important;
-  transition: 0ms ease-out;
-  -webkit-transition:0ms ease-out;
-}
-.flat-button:first-child:hover{
-  color:#222 !important;
-}
-
-.flat-button.fakeButton:hover{
-  background-color: #222 !important; 
-  color:#08fdd8 !important;
-  text-decoration: none!important;
-}
-
-.flat-button.fakeButton:first-child:hover{
-  color:#08fdd8 !important;
-}
-
-#contactButton{
-  width: inherit;
-  color: #08fdd8;
-  font-size: 11px;
-  letter-spacing: 4px;
-  font-family: "Open Sans",sans-serif;
-  text-decoration: none;
-  padding: 8px 12px;
-  border: 1px solid #08fdd8;
-  margin-top: 25px;
-  float: left;
-  border-radius: 3px;
-  animation: myanim2 1s 1.8s backwards;
-}
-.nav:hover{
-  cursor: pointer; 
 }
 h2{
   color: #8d8d8d;
@@ -251,79 +44,55 @@ h2{
   -webkit-animation: myanim2 1s 1.8s backwards;
   animation: myanim2 1s 1.8s backwards;
 }
-a h2{
-  text-align: center;
-}
 
-.placeholder{
-  height:24px;
-}
-p {
-  margin-top: 14px;
-}
+
+
 h6 + p{
   margin-left: 3em;
 }
-.link{
-  text-decoration: underline;
-  cursor: pointer; 
+
+
+.first-paragraph{
+  margin-top:25px;
 }
 
-.social ul{
-  position: fixed;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  left: 60px;
-  width: 4px;
-  height: 100%;
-  background-color: #08fdd8;
-}
-#resume{
-  position: absolute;
-  right: 1em;
-  top: -10%;
-  width: 45%;
-  height:110%;
-  min-height: 101%;
-  vertical-align: middle;
-  color: #fff;
-  overflow:hidden;
-}
-
-.verticalButtons .flat-button.fakeButton {
-  border:none;
-  margin-top: 30px;
-
+#myCanvas{
+  width: 100%;
+  min-width:500px;
 }
 
 .work{
-  width:175%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: row;
-  vertical-align: middle;
+  margin-top:5%;
+  line-height: 2;
 }
-.work img{
-  border: 2px solid #08fdd8;
-  margin:30px;
-  opacity: 0.7; 
+.asd{
+  margin-top:0%;
+  margin-left:0px;
 }
-.work img:hover{
-  opacity: 1; 
-  border: 5px solid #08fdd8;
-  cursor: pointer; 
+hr{
+  border-color:#08fdd8;
+  margin-left:80px;
+}
+#myCanvasContainer{
+  padding-left:0px;
+}
+@media (max-width: 960px){
+  .main {
+    margin-left:0;
+    margin-top:80px;
+  }
+  .main .row div{
+    padding-left:5%;
+  }
 
+  .asd{
+    margin-top:80px;
+  }
+
+  hr{
+    border-color:#08fdd8;
+    margin-left:20px;
+  }
 }
-.work h3{
-  color:#08fdd8;
-}
-.desc{
-  margin:25px;
-}
-.desc h2{
-  margin-top: 0px;
-}
+
+

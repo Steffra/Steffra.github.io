@@ -4,11 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/buttons.css">
   <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
   <title>Krausz Bertold - Skills</title>
 </head>
@@ -18,45 +21,48 @@
     <div class="middle">
       <ul>
         <li class="nav icon fa fa-home fa-2x" onclick="location.href = 'index';" id="one"></li>
-        <div class="nav hovertext" onclick="location.href = 'index';" id=one_text>HOME</div>
+        <div class=" hovertext" onclick="location.href = 'index';" id=one_text>HOME</div>
         <li class="nav icon fa fa-user fa-2x" onclick="location.href = 'about';" id="two"></li>
-        <div class="nav hovertext" onclick="location.href = 'about';" id=two_text>ABOUT</div>
+        <div class=" hovertext" onclick="location.href = 'about';" id=two_text>ABOUT</div>
         <li class="nav icon fa fa-gear fa-2x active" onclick="location.href = 'skills';" id="three"></li>
-        <div class="nav hovertext" onclick="location.href = 'skills';" id=three_text>SKILLS</div>
+        <div class=" hovertext" onclick="location.href = 'skills';" id=three_text>SKILLS</div>
         <li class="nav icon fa fa-eye fa-2x" onclick="location.href = 'portfolio';" id="four"></li>
-        <div class="nav hovertext" onclick="location.href = 'portfolio';" id=four_text>MY WORK</div>
+        <div class="hovertext" onclick="location.href = 'portfolio';" id=four_text>MY WORK</div>
         <li class="nav icon fa fa-envelope fa-2x" onclick="location.href = 'contact';" id="five"></li>
-        <div class="nav hovertext" onclick="location.href = 'contact';" id=five_text>CONTACT</div>
+        <div class=" hovertext" onclick="location.href = 'contact';" id=five_text>CONTACT</div>
       </ul>
     </div>
     <div class="social">
-      <a href="https://www.linkedin.com/in/krauszbertold" target="_blank"><i
-            class="fa socialIcon fa-linkedin"></i></a>
-      <a href="https://www.facebook.com/krausz.bertold" target="_blank"><i
-            class="fa socialIcon fa-facebook"></i></a>
+      <a href="https://www.linkedin.com/in/krauszbertold" target="_blank"><i class="fa socialIcon fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/krausz.bertold" target="_blank"><i class="fa socialIcon fa-facebook"></i></a>
       <a href="https://github.com/Steffra" target="_blank"><i class="fa socialIcon fa-github"></i></a>
-      <a href="mailto:krauszbertold@gmail.com" ><i class="fa socialIcon fa-envelope"></i></a>
+      <a href="mailto:krauszbertold@gmail.com"><i class="fa socialIcon fa-envelope"></i></a>
     </div>
-    <div class="accent"></div>
   </div>
-  <div class="main">
-    <div class="leftcontent">
-      <h1 class="textInMiddle hi">Skills & Experience</h1>
-      <div class="placeholder"></div>
-      <p>I do full stack developement on small, and mid sized web applications.</p>
-      <p>On the client side, I work with <span class="hi">HTML</span>, <span class="hi">CSS</span>, <span
-          class="hi">JavaScript</span>, while on the back end I write code in <span class="hi">PHP</span>, and <span
-          class="hi">SQL</span> that meets the expectations of the client and the standards of our companies. Also
-        fairly familiar with the
-        following frameworks/plugins: Bootstrap, JQuery, PEAR.</p>
-      <p>Visit my <span class="hi link"
-          onClick="parent.open('https://www.linkedin.com/in/krauszbertold')">LinkedIn</span> for more details, or just
-        <span class="hi link" onclick="location.href = 'contact';">Contact</span> me.</p>
-    </div>
-    <div class="" id="myCanvasContainer">
-      <canvas width="500" height="500" id="myCanvas">
-        <p>Anything in here will be replaced on browsers that support the canvas element</p>
-      </canvas>
+  <div class="row">
+    <div class="main col col-xs-12">
+      <div class="row">
+        <div class="col col-xs-6">
+          <h1 class="textInMiddle colored">Skills &<br/>Experience</h1>
+          <p class="first-paragraph">I do full stack developement on small, and mid sized web applications.</p>
+          <p>On the client side, I work with <span class="colored">HTML</span>, <span class="colored">CSS</span>, <span
+              class="colored">JavaScript</span>, while on the back end I write code in <span class="colored">PHP</span>, and <span
+              class="colored">SQL</span> that meets the expectations of the client and the standards of our companies. Also
+            fairly familiar with the
+            following frameworks/plugins: Bootstrap, JQuery, PEAR.</p>
+          <p>Visit my <span class="colored link"
+              onClick="parent.open('https://www.linkedin.com/in/krauszbertold')">LinkedIn</span> for more details, or
+            just
+            <span class="colored link" onclick="location.href = 'contact';">Contact</span> me.</p>
+        </div>
+        <div class="col col-xs-6">
+          <div class="" id="myCanvasContainer">
+            <canvas id="myCanvas">
+              <p>Anything in here will be replaced on browsers that support the canvas element</p>
+            </canvas>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div hidden="hidden" id="tags">
@@ -85,10 +91,8 @@
       <li><a data-weight="17" target="_blank">SCRUM</a></li>
     </ul>
   </div>
-
 </body>
 <script src="js/jquery-slim.min.js"></script>
-<script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.tagcanvas.min.js" type="text/javascript"></script>
 <script src="js/main.js" type="text/javascript"></script>

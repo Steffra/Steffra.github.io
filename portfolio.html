@@ -2,81 +2,103 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
-  <title>Krausz Bertold - My work</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+    <title>Krausz Bertold - Portfolio</title>
 </head>
 
 <body>
-  <div class="sidenav">
-    <div class="middle">
-      <ul>
-        <li class="nav icon fa fa-home fa-2x" onclick="location.href = 'index';" id="one"></li>
-        <div class="nav hovertext" onclick="location.href = 'index';" id=one_text>HOME</div>
-        <li class="nav icon fa fa-user fa-2x" onclick="location.href = 'about';" id="two"></li>
-        <div class="nav hovertext" onclick="location.href = 'about';" id=two_text>ABOUT</div>
-        <li class="nav icon fa fa-gear fa-2x " onclick="location.href = 'skills';" id="three"></li>
-        <div class="nav hovertext" onclick="location.href = 'skills';" id=three_text>SKILLS</div>
-        <li class="nav icon fa fa-eye fa-2x active" onclick="location.href = 'portfolio';" id="four"></li>
-        <div class="nav hovertext" onclick="location.href = 'portfolio';" id=four_text>MY WORK</div>
-        <li class="nav icon fa fa-envelope fa-2x" onclick="location.href = 'contact';" id="five"></li>
-        <div class="nav hovertext" onclick="location.href = 'contact';" id=five_text>CONTACT</div>
-      </ul>
-    </div>
-    <div class="social">
-      <a href="https://www.linkedin.com/in/krauszbertold" target="_blank"><i
-            class="fa socialIcon fa-linkedin"></i></a>
-      <a href="https://www.facebook.com/krausz.bertold" target="_blank"><i
-            class="fa socialIcon fa-facebook"></i></a>
-      <a href="https://github.com/Steffra" target="_blank"><i class="fa socialIcon fa-github"></i></a>
-      <a href="mailto:krauszbertold@gmail.com" ><i class="fa socialIcon fa-envelope"></i></a>
-    </div>
-    <div class="accent"></div>
-  </div>
-  <div class="main">
-    <div class="leftcontent">
-        
-        <div class="work">
-            <img src="img/spending-tracker.PNG" width="320px" height="157px"/>
-            <div class="desc">
-                <h3>Spending tracker</h3>
-                <h2>steffra.ddns.net</h2>
-                Developing this system was a lot of fun, it tested my ability to create something from scratch, and take it to a production-ready application. This is entirely run by myself, I configured my home network, the webserver, the cron scheduler, built the database, created the backend, and mostly designed the front. 
-             </div>
+    <div class="sidenav">
+        <div class="middle">
+            <ul>
+                <li class="nav icon fa fa-home fa-2x" onclick="location.href = 'index';" id="one"></li>
+                <div class=" hovertext" onclick="location.href = 'index';" id=one_text>HOME</div>
+                <li class="nav icon fa fa-user fa-2x" onclick="location.href = 'about';" id="two"></li>
+                <div class=" hovertext" onclick="location.href = 'about';" id=two_text>ABOUT</div>
+                <li class="nav icon fa fa-gear fa-2x" onclick="location.href = 'skills';" id="three"></li>
+                <div class=" hovertext" onclick="location.href = 'skills';" id=three_text>SKILLS</div>
+                <li class="nav icon fa fa-eye fa-2x active" onclick="location.href = 'portfolio';" id="four"></li>
+                <div class="hovertext" onclick="location.href = 'portfolio';" id=four_text>MY WORK</div>
+                <li class="nav icon fa fa-envelope fa-2x" onclick="location.href = 'contact';" id="five"></li>
+                <div class=" hovertext" onclick="location.href = 'contact';" id=five_text>CONTACT</div>
+            </ul>
         </div>
-        <div class="work">
-            <img src="img/quiz.PNG" width="320px" height="157px"/>
-            <div class="desc">
-                <h3>Online quiz </h3>
-                <h2>steffra.ddns.net/vizsga</h2>
-                Given an excel file, with 1200 questsions and answers, build something that helps the users test their knowledge. I had 2 days to develop this (strictly after work). During developement, I had to optimize my time, for acceptable results. The friend who asked for it, has passed the exam, so I consider this a success :)
-             </div>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/krauszbertold" target="_blank"><i
+                    class="fa socialIcon fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/krausz.bertold" target="_blank"><i
+                    class="fa socialIcon fa-facebook"></i></a>
+            <a href="https://github.com/Steffra" target="_blank"><i class="fa socialIcon fa-github"></i></a>
+            <a href="mailto:krauszbertold@gmail.com"><i class="fa socialIcon fa-envelope"></i></a>
         </div>
-        <div class="work">
-            <img src="img/cv.PNG" width="320px" height="157px"/>
-            <div class="desc">
-               <h3>This CV </h3>
-               <h2>steffra.github.io</h2>
-               My motivation to start this project was, to just jump on to Github, and create something open-source. I didn't have an online resume yet, so I figured I might as well just do that. 
+    </div>
+    <div class="row">
+        <div class="asd main col col-xs-12">
+            <div class="row">
+                <div class="col col-xs-6 work">
+                    <h3>Spending tracker</h3>
+                    <h2>steffra.ddns.net</h2>
+                    Developing this system was a lot of fun, it tested my ability to create something from scratch,
+                    and take
+                    it to a production-ready application. This is entirely run by myself, I configured my home
+                    network, the
+                    webserver, the cron scheduler, built the database, created the backend, and mostly designed the
+                    front.
+                </div>
+                <div class="col col-xs-6">
+                    <img class="img-fluid" src="img/spending-tracker.png" />
+                </div>
             </div>
-          </div>
-      </div>
-  </div>
-  
+            <hr>
+            <div class="row">
+                <div class="col col-xs-6">
+                    <img class="img-fluid" src="img/quiz.png" />
+                </div>
+                <div class="col col-xs-6 work">
+                    <h3>Online quiz </h3>
+                    <h2>steffra.ddns.net/vizsga</h2>
+                    Given an excel file, with 1200 questsions and answers, build something that helps the users test
+                    their
+                    knowledge. I had 2 days to develop this (strictly after work). During developement, I had to
+                    optimize my
+                    time, for acceptable results. The friend who asked for it, has passed the exam, so I consider this a
+                    success :)
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col col-xs-6 work">
+                    <h3>This CV </h3>
+                    <h2>steffra.github.io</h2>
+                    My motivation to start this project was, to just jump on to Github, and create something
+                    open-source. I
+                    didn't have an online resume yet, so I figured I might as well just do that.
+                    success :) <br>
+                    In a second iteration, I have made this site a PWA (Progressieve Web Application), which basically means, it can run offline, and behave much like a native app on many different platforms.
+                </div>
+                <div class="col col-xs-6">
+                    <img class="img-fluid" src="img/cv.png" />
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="js/jquery-slim.min.js"></script>
-<script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js" type="text/javascript"></script>
-<script> 
-    $('.work img').on('click',function(){
-      window.open("http://"+($(this).next().find("h2").text()),'_blank');
+<script>
+    $('.work img').on('click', function () {
+        window.open("http://" + ($(this).next().find("h2").text()), '_blank');
     });
 </script>
+
 </html>

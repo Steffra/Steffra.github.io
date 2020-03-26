@@ -1,0 +1,62 @@
+.flat-button{
+    width:100%;
+    min-width:300px;
+    text-align:center;
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 4px;
+    font-family: "Open Sans",sans-serif;
+    text-decoration: none;
+    padding: 18px 30px;
+    border: 1px solid #08fdd8;
+    margin-top: 25px;
+    float: left;
+    border-radius: 3px;
+    animation: myanim2 1s 1.8s backwards;
+    transition: all 0ms ease-out; 
+    -webkit-transition: all 0ms ease-out;
+  }
+  .colored{
+    color: #08fdd8;
+    font-weight: 800;
+  }
+  
+  #contactButton{
+    padding: 8px 12px;
+    width:auto;
+  }
+    
+  .flat-button:hover{
+    background-color: #08fdd8 !important; 
+    color:#222 !important;
+    text-decoration: none!important;
+    transition: 0ms ease-out;
+    -webkit-transition:0ms ease-out;
+  }
+  .flat-button:first-child:hover{
+    color:#222 !important;
+  }
+  
+  .flat-button.fakeButton:hover{
+    background-color: #222 !important; 
+    color:#08fdd8 !important;
+    text-decoration: none!important;
+  }
+  
+  .flat-button.fakeButton:first-child:hover{
+    color:#08fdd8 !important;
+  }
+
+  .verticalButtons .flat-button.fakeButton {
+    border:none;
+    margin-top: 30px;
+  }
+
+  .verticalButtons{
+    padding-left:0px !important;
+    min-width:541px;
+  }
+  .verticalButtons .flat-button{
+    min-width:auto;
+    width:auto;
+  }

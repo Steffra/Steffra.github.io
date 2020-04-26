@@ -42,3 +42,11 @@ var canvas = document.getElementById('myCanvas');
 if (canvas) {
     canvas.height = canvas.width;
 }
+
+$(function(){
+    $( "body" ).on( "swipeleft", swipeleftHandler );
+
+    function swipeleftHandler( event ){
+    window.location.href = "index.php";
+    }
+});

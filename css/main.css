@@ -22,13 +22,13 @@ body {
 
 .main .row div{
   padding-left:10%;
-  min-width:560px;
+  min-width:300px;
   padding-right: 0px
 }
 
 h1{
   color: #fff;
-    font-size: 65px;
+    font-size: 50px;
     line-height: 53px;
     margin: 0;
     font-family: Sans-Serif;
@@ -58,7 +58,7 @@ h6 + p{
 
 #myCanvas{
   width: 100%;
-  min-width:500px;
+  min-width:350px;
 }
 
 .work{
@@ -82,7 +82,7 @@ hr{
     margin-top:80px;
   }
   .main .row div{
-    padding-left:5%;
+    /*padding-left:5%;*/
   }
 
   .asd{

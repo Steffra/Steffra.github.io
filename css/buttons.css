@@ -1,6 +1,6 @@
 .flat-button{
     width:100%;
-    min-width:300px;
+    min-width:200px;
     text-align:center;
     color: #fff;
     font-size: 11px;
@@ -49,14 +49,27 @@
 
   .verticalButtons .flat-button.fakeButton {
     border:none;
-    margin-top: 30px;
+    /*margin-top: 30px;*/
   }
 
   .verticalButtons{
     padding-left:0px !important;
-    min-width:541px;
+    /*min-width:300px;*/
   }
   .verticalButtons .flat-button{
-    min-width:auto;
-    width:auto;
+   /* min-width:auto;*/
+    /*width:auto;*/
+  }
+
+ 
+  @media (max-width: 508px){
+    .flat-button{
+      width:100%;
+    }
+    .fakeButton{
+      margin-top:0px;
+    }
+    #cvhu{
+      margin-top:0px;
+    }
   }

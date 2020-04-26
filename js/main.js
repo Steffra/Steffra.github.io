@@ -51,7 +51,7 @@ var gesture = {
     y: [],
     match: ''
   },
-  tolerance = 100;
+  tolerance = 30;
 window.addEventListener('touchstart',function(e){
     for (i=0;i<e.touches.length;i++){
     var dot = document.createElement('div');

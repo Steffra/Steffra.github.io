@@ -96,7 +96,8 @@ hr{
 }
 
 .link{
-  cursor:pointer
+  cursor:pointer;
+  text-decoration: underline;
 }
 
 

@@ -46,6 +46,13 @@ h2{
 }
 
 
+h2>a{
+  text-decoration: none;
+  color: #8d8d8d;
+  font-style: italic;
+}
+
+
 
 h6 + p{
   margin-left: 3em;
